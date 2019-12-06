@@ -1,5 +1,5 @@
 <?php
-
+// 요청의 시작점
 /**
  * Laravel - A PHP Framework For Web Artisans
  *

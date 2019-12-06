@@ -144,9 +144,12 @@ class ArticlesController extends Controller
         // echo $foo;
         // $id : URL에서 넘겨지는 리소스아이디
         // return __METHOD__ . "{$id} 번째 리소스 조회 기능";
-        $articles = \App\Article::findOrFail($id);
+        $article = \App\Article::findOrFail($id);
 
-        return $articles->toArray();
+        // return $articles->toArray();
+
+        debug($article->toArray());
+        return view('articles.show', compact('article'));
     }
 
     /**
